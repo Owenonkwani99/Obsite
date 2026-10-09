@@ -1,0 +1,38 @@
+{
+  "name": "obsite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"pnpm dev:frontend\" \"pnpm dev:backend\"",
+    "dev:frontend": "vite --host 0.0.0.0",
+    "dev:backend": "node --watch server/index.js",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint .",
+    "preview": "vite preview --host 0.0.0.0",
+    "start:backend": "node server/index.js"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^9.4.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "morgan": "^1.12.1",
+    "nodemailer": "^10.0.16",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}
