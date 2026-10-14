@@ -6,7 +6,7 @@ A responsive agency-style website for Obsite, built with React, Vite, TypeScript
 
 - Frontend: React + TypeScript + Vite + React Router
 - Backend: Node.js + Express + Nodemailer
-- Styling: custom CSS
+- Styling: Tailwind CSS v4 utilities with custom CSS
 - Package manager: pnpm
 
 ## Local development

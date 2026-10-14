@@ -55,7 +55,7 @@ app.post('/api/contact', async (req, res) => {
   const smtpHost = process.env.SMTP_HOST
   const smtpUser = process.env.SMTP_USER
   const smtpPass = process.env.SMTP_PASS
-  const contactEmail = process.env.CONTACT_EMAIL || 'hello@cobalt.studio'
+  const contactEmail = process.env.CONTACT_EMAIL || 'hello@obsite.studio'
 
   if (!smtpHost || !smtpUser || !smtpPass) {
     return res.status(503).json({
